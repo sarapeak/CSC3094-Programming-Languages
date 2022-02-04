@@ -262,7 +262,6 @@ public class Interpreter
          }
          System.out.println();
       }
-      System.out.println("\nMap: "+map);
       return program;
    }
    
@@ -342,12 +341,12 @@ public class Interpreter
                //If the map contains only var2
                else if(map.containsKey(var2))
                {
-                  getC = image.getColor(Integer.parseInt(map.get(var2)), Integer.parseInt(arrayS[3]));
+                  getC = image.getColor(Integer.parseInt(map.get(var2)), Integer.parseInt(var3));
                }
                //If the map contains only var3
                else if(map.containsKey(var3))
                {
-                  getC = image.getColor(Integer.parseInt(map.get(var3)), Integer.parseInt(arrayS[2]));
+                  getC = image.getColor(Integer.parseInt(var2), Integer.parseInt(map.get(var3)));
                }   
                //If the map does not contain any of the variables              
                else
@@ -412,13 +411,13 @@ public class Interpreter
                   //Use the value of the key and add it to the third position
                else if(map.containsKey(var2))
                {
-                  resultInt = Integer.parseInt(map.get(var2)) + Integer.parseInt(arrayS[3]);
+                  resultInt = Integer.parseInt(map.get(var2)) + Integer.parseInt(var3);
                }
                //If the map contains the key integer at position 3
                   //Use the value of the key and add it to the second position
                else if(map.containsKey(var3))
                {
-                  resultInt = Integer.parseInt(map.get(var3)) + Integer.parseInt(arrayS[2]);
+                  resultInt = Integer.parseInt(var2) + Integer.parseInt(map.get(var3));
                }                 
                //If the map does not have those keys
                   //Hope that they are integers and add them
@@ -452,12 +451,12 @@ public class Interpreter
                //When the map contains one variable (var2)
                else if(map.containsKey(var2))
                {
-                  resultInt = Integer.parseInt(map.get(var2)) - Integer.parseInt(arrayS[3]);
+                  resultInt = Integer.parseInt(map.get(var2)) - Integer.parseInt(var3);
                }
                //When the map contains one variable (var3)
                else if(map.containsKey(var3))
                {
-                  resultInt = Integer.parseInt(arrayS[2]) - Integer.parseInt(map.get(var3));
+                  resultInt = Integer.parseInt(var2) - Integer.parseInt(map.get(var3));
                }
                //When the map contains none of the variables
                else
@@ -488,12 +487,12 @@ public class Interpreter
                //When the map contains one variable (var2)
                else if(map.containsKey(var2))
                {
-                  resultInt = Integer.parseInt(map.get(var2)) * Integer.parseInt(arrayS[3]);
+                  resultInt = Integer.parseInt(map.get(var2)) * Integer.parseInt(var3);
                }
                //When the map contains one variable (var3)
                else if(map.containsKey(var3))
                {
-                  resultInt = Integer.parseInt(map.get(var3)) * Integer.parseInt(arrayS[2]);
+                  resultInt = Integer.parseInt(var2) * Integer.parseInt(map.get(var3));
                }
                //When the map does not contain any of the variables
                else
@@ -523,12 +522,12 @@ public class Interpreter
                //When the map contains only one variable
                else if(map.containsKey(var2))
                {
-                  resultInt = Integer.parseInt(map.get(var2)) / Integer.parseInt(arrayS[3]);
+                  resultInt = Integer.parseInt(map.get(var2)) / Integer.parseInt(var3);
                }
                //When the map contains only one variable
                else if(map.containsKey(var3))
                {
-                  resultInt = Integer.parseInt(map.get(var3)) / Integer.parseInt(arrayS[2]);
+                  resultInt = Integer.parseInt(var2) / Integer.parseInt(map.get(var3));
                }
                //When the map does not contain any of the variables
                else
@@ -557,12 +556,12 @@ public class Interpreter
                //When the map contains only one variable
                else if(map.containsKey(var2))
                {
-                  resultInt = Integer.parseInt(map.get(var2)) % Integer.parseInt(arrayS[3]);
+                  resultInt = Integer.parseInt(map.get(var2)) % Integer.parseInt(var3);
                }
                //When the map contains only one variable
                else if(map.containsKey(var3))
                {
-                  resultInt = Integer.parseInt(map.get(var3)) % Integer.parseInt(arrayS[2]);
+                  resultInt = Integer.parseInt(var2) % Integer.parseInt(map.get(var3));
                } 
                //When the map contains none of the variables                
                else
@@ -594,12 +593,12 @@ public class Interpreter
                   //When the map contains one variable
                   else if(map.containsKey(var2))
                   {
-                     resultBool = Boolean.parseBoolean(map.get(var2)) == Boolean.parseBoolean(arrayS[3]);
+                     resultBool = Boolean.parseBoolean(map.get(var2)) == Boolean.parseBoolean(var3);
                   }
                   //When the map contains one variable
                   else if(map.containsKey(var3))
                   {
-                     resultBool = Boolean.parseBoolean(map.get(var3)) == Boolean.parseBoolean(arrayS[2]);
+                     resultBool = Boolean.parseBoolean(var2) == Boolean.parseBoolean(map.get(var3));
                   } 
                   //When the map does not have any of the variables                
                   else
@@ -619,12 +618,12 @@ public class Interpreter
                   //When the map contains one variable
                   else if(map.containsKey(var2))
                   {
-                     resultBool = Integer.parseInt(map.get(var2)) == Integer.parseInt(arrayS[3]);
+                     resultBool = Integer.parseInt(map.get(var2)) == Integer.parseInt(var3);
                   }
                   //When the map contains one variable
                   else if(map.containsKey(var3))
                   {
-                     resultBool = Integer.parseInt(map.get(var3)) == Integer.parseInt(arrayS[2]);
+                     resultBool = Integer.parseInt(var2) == Integer.parseInt(map.get(var3));
                   } 
                   //When the map does not have any of the variables                
                   else
@@ -641,34 +640,22 @@ public class Interpreter
                //If the map contains both of the variables
                if(map.containsKey(var2) && map.containsKey(var3))
                {
-                  if(Integer.parseInt(map.get(var2)) > Integer.parseInt(map.get(var3)))
-                  {
-                     resultBool = true;
-                  }
+                  resultBool = Integer.parseInt(map.get(var2)) > Integer.parseInt(map.get(var3));
                }
                //When the map has one of the variables (var2)
                else if(map.containsKey(var2))
                {
-                  if(Integer.parseInt(map.get(var2)) > Integer.parseInt(arrayS[3]))
-                  {
-                     resultBool = true;
-                  }
+                  resultBool = Integer.parseInt(map.get(var2)) > Integer.parseInt(var3);
                }
                //When the map has one of the variables (var3)
                else if(map.containsKey(var3))
                {
-                  if(Integer.parseInt(map.get(var3)) > Integer.parseInt(arrayS[2]))
-                  {
-                     resultBool = true;
-                  }
+                  resultBool = Integer.parseInt(var2) > Integer.parseInt(map.get(var3));
                } 
                //When the map has none of the variables                
                else
                {
-                  if(Integer.parseInt(var2) > Integer.parseInt(var3))
-                  {
-                     resultBool = true;
-                  }
+                  resultBool = Integer.parseInt(var2) > Integer.parseInt(var3);
                }
                //If the map has the variable, it will replace it, otherwise, it will add it
                if(map.containsKey(var1))
@@ -687,34 +674,22 @@ public class Interpreter
                //When the map has both of the variables
                if(map.containsKey(var2) && map.containsKey(var3))
                {
-                  if(Integer.parseInt(map.get(var2)) >= Integer.parseInt(map.get(var3)))
-                  {
-                     resultBool = true;
-                  }
+                  resultBool = Integer.parseInt(map.get(var2)) >= Integer.parseInt(map.get(var3));
                }
                //When the map has one variable (var2)
                else if(map.containsKey(var2))
                {
-                  if(Integer.parseInt(map.get(var2)) >= Integer.parseInt(arrayS[3]))
-                  {
-                     resultBool = true;
-                  }
+                  resultBool = Integer.parseInt(map.get(var2)) >= Integer.parseInt(var3);
                }
                //When the map has one variable (var3)
                else if(map.containsKey(var3))
                {
-                  if(Integer.parseInt(map.get(var3)) >= Integer.parseInt(arrayS[2]))
-                  {
-                     resultBool = true;
-                  }
+                  resultBool = Integer.parseInt(var2) >= Integer.parseInt(map.get(var3));
                }  
                //When the map has none of the variables               
                else
                {
-                  if(Integer.parseInt(var2) >= Integer.parseInt(var3))
-                  {
-                     resultBool = true;
-                  }
+                  resultBool = Integer.parseInt(var2) >= Integer.parseInt(var3);
                }
                //If the map has the variable, it will replace it, otherwise, it will add it
                if(map.containsKey(var1))
@@ -741,12 +716,12 @@ public class Interpreter
                   //When the map has only one of the variables (var2)
                   else if(map.containsKey(var2))
                   {
-                     resultBool = Boolean.parseBoolean(map.get(var2)) & Boolean.parseBoolean(arrayS[3]);
+                     resultBool = Boolean.parseBoolean(map.get(var2)) & Boolean.parseBoolean(var3);
                   }
                   //When the map has one of the variables (var3)
                   else if(map.containsKey(var3))
                   {
-                     resultBool = Boolean.parseBoolean(map.get(var3)) & Boolean.parseBoolean(arrayS[2]);
+                     resultBool = Boolean.parseBoolean(var2) & Boolean.parseBoolean(map.get(var3));
                   } 
                   //When the map has none of the variables                
                   else
@@ -766,12 +741,12 @@ public class Interpreter
                   //When the map contains one variable (var2)
                   else if(map.containsKey(var2))
                   {
-                     resultInt = Integer.parseInt(map.get(var2)) & Integer.parseInt(arrayS[3]);
+                     resultInt = Integer.parseInt(map.get(var2)) & Integer.parseInt(var3);
                   }
                   //When the map contains one variable (var3)
                   else if(map.containsKey(var3))
                   {
-                     resultInt = Integer.parseInt(map.get(var3)) & Integer.parseInt(arrayS[2]);
+                     resultInt = Integer.parseInt(var2) & Integer.parseInt(map.get(var3));
                   } 
                   //WHen the map contains none of the variables                
                   else
@@ -796,12 +771,12 @@ public class Interpreter
                   //When the map has one variable (var2)
                   else if(map.containsKey(var2))
                   {
-                     resultBool = Boolean.parseBoolean(map.get(var2)) | Boolean.parseBoolean(arrayS[3]);
+                     resultBool = Boolean.parseBoolean(map.get(var2)) | Boolean.parseBoolean(var3);
                   }
                   //When the map has one variable (var3)
                   else if(map.containsKey(var3))
                   {
-                     resultBool = Boolean.parseBoolean(map.get(var3)) | Boolean.parseBoolean(arrayS[2]);
+                     resultBool = Boolean.parseBoolean(var2) | Boolean.parseBoolean(map.get(var3));
                   }  
                   //When the map has none of the variables            
                   else
@@ -821,12 +796,12 @@ public class Interpreter
                   //When the map has one variable (var2)
                   else if(map.containsKey(var2))
                   {
-                     resultInt = Integer.parseInt(map.get(var2)) | Integer.parseInt(arrayS[3]);
+                     resultInt = Integer.parseInt(map.get(var2)) | Integer.parseInt(var3);
                   }
                   //When the map has one variable (var3)
                   else if(map.containsKey(var3))
                   {
-                     resultInt = Integer.parseInt(map.get(var3)) | Integer.parseInt(arrayS[2]);
+                     resultInt = Integer.parseInt(var2) | Integer.parseInt(map.get(var3));
                   }  
                   //When the map has none of the variables               
                   else
@@ -837,16 +812,22 @@ public class Interpreter
                }
                break;
             case "=":
-               String var = arrayS[1];   //Gets the name of the variable
+               String var1 = arrayS[1];   //Gets the name of the variable
+               String var2 = arrayS[2];
                //If the map has it already, it will replace the value
-               if(map.containsKey(var))
+               if(map.containsKey(var1) && map.containsKey(var2))
                {
-                  map.replace(var, arrayS[2]);
+                  map.replace(var1, map.get(var2));
+               }
+               //If it only contains var1, it will replace the value
+               else if(map.containsKey(var1))
+               {
+                  map.replace(var1, var2);
                }
                //If it does not, it will add it to the map
                else
                {
-                  map.put(var, arrayS[2]);
+                  map.put(var1, var2);
                }
                break;
             case "jump":
