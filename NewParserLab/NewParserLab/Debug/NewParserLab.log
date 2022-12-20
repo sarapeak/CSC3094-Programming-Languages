@@ -1,0 +1,15 @@
+﻿  AST.cpp
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(319,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(348,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(362,15): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(376,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(448,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(488,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(524,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(543,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(562,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(572,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(582,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(592,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\Downloads\ShaderCompilerParserSampleAllComments\ShaderCompilerParserSample\AST.cpp(602,20): warning C4018: '<': signed/unsigned mismatch
+  NewParserLab.vcxproj -> C:\Users\sarap\source\repos\NewParserLab\Debug\NewParserLab.exe

@@ -1,0 +1,11 @@
+type, type2, type3 hello(type name , hheh eheh, sdfd sdffsd)
+{
+int h = 0;
+for(int i = 20; i >= h; i = i+1;)
+{
+if(
+h >10)
+{newFunction();h=0;}
+h = h+1;
+}
+}
