@@ -1,0 +1,33 @@
+﻿  AST.cpp
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(174,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(195,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(207,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(266,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(276,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(318,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(330,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(342,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(354,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(366,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(446,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(462,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(571,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(574,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(608,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(630,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(638,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(660,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(683,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(810,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(822,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(852,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(886,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(899,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(919,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(935,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(948,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(961,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(1007,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(1024,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sarap\source\repos\TypeChecker\ShaderCompilerTypeCheckerSample\AST.cpp(1088,22): warning C4018: '<': signed/unsigned mismatch
+  TypeCheckerLab.vcxproj -> C:\Users\sarap\source\repos\TypeCheckerLab\Debug\TypeCheckerLab.exe

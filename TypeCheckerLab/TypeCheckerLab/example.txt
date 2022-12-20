@@ -1,0 +1,16 @@
+int, int, int entry(int name, bool eheh, int sdffsd)
+{
+    bool b = 1==1;
+    int i;
+    if (b)
+    {
+        b = false;
+        int j = 10;
+    }
+    for (int h = 10; h >= 0; h = h - 1;)
+    {
+        int j = 9;
+    }
+    int h;
+}
+
